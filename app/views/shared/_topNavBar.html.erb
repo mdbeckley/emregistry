@@ -1,0 +1,21 @@
+<nav class="nav"> <!-- think of this as a div tag -->
+   
+   <ul class="navList">
+     <li class="navItem">
+    <%= image_tag "emregistry242x40.png", :class => "navItem" %>    
+	  <!-- Unhappy with image background color -->
+	 <%= link_to "Home", root_path, :class => "colorMenuLinkText", :id => "a"  %>
+	 <a href="#" class="colorMenuLinkText" id="b"> Settings </a>
+	 <%= link_to "Interact", interacttemp_path, :class => "colorMenuLinkText", :id => "c" %>
+     <!--<a href="interact.html" class="colorMenuLinkText" id="c"> Interact </a> -->
+     <a href="#" class="colorMenuLinkText" id="d"> Tools </a>
+     <a href="contact.html" class="colorMenuLinkText" id="e"> Contact </a>
+	 <a href="#" class="colorMenuLinkText" id="f"> Sign-In </a>
+	 <%= image_tag "envelopeIcon.png", :class => "navItem", :id => "g" %> 
+	 <%= image_tag "userIconZoe.png", :class => "navItem", :id => "j" %> 
+    
+	 
+	 
+	 </li>
+  </ul>   
+</nav>

@@ -1,0 +1,432 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@media screen and (max-width: 5000px) and (min-width: 480px){
+  body
+  {
+   background-color: white;
+   margin: auto; 
+   width: 100%;
+   padding: 0;
+ }
+ 
+ #notes
+ {
+ color:red;
+ }
+ 
+ .navList, .nav, .navItem
+ {
+ list-style-type: none;
+ }
+ 
+ .nav
+ {
+max-height: 40px; 
+min-height: 40px; 
+width: 100%;
+background-color: green;
+position:fixed;
+z-index:5000;
+}
+
+.navItem
+{
+position:fixed;
+top:0px;
+left:0px;
+}
+
+#a
+{
+position:fixed;
+top:0px;
+left:250px;
+}
+
+#b
+{
+position:fixed;
+top:0px;
+left:350px;
+}
+
+#c
+{
+position:fixed;
+top:0px;
+left:500px;
+}
+
+#d
+{
+position:fixed;
+top:0px;
+left:650px;
+}
+
+#e
+{
+position:fixed;
+top:0px;
+left:750px;
+}
+
+#g
+{
+position:fixed;
+top:0px;
+left:900px;
+}
+
+#h
+{
+position:fixed;
+top:0px;
+left:975px;
+text-decoration:none;
+font-family: Impact;
+font-size:30px;
+}
+/* #i not include since its used extensivly to count and iterate*/
+
+#j
+{
+position:fixed;
+top:0px;
+left:1000px;
+}
+ 
+a.colorMenuLinkText:link
+{
+color:white;
+text-decoration:none;
+font-family: Impact;
+font-size:30px;
+}
+
+a.colorMenuLinkText:visited
+{
+color:white;
+} 
+
+a.colorMenuLinkText:hover
+{
+color:grey;
+}
+
+/* Start of image slider changes*/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img 
+{
+      width: 100%;
+	  z-index:-1;
+	  
+      
+}
+
+.moveMyScrollingImageButton
+{
+align-items: right;
+}
+
+#colorImageSliderBackground
+{
+background-color:green;
+}
+
+#colorMyRightChevron
+{
+  color:black;
+}
+
+#colorMyLeftChevron
+{
+  color:black;
+}
+
+#colorTheSmallCircleThing
+{
+  background-color:blue;
+}
+
+#adjustMyCarousel
+{
+width:71.19%;
+margin:0%,15%,0%,15%;
+padding:0px;
+/* min-height:900px; */
+z-index:-1;
+/*
+border: 5px;
+border-radius: 25px;
+more research is needed for to make rounded carosel backing
+*/
+}
+
+.makeImgMinHeight
+{
+min-height:500px;
+max-height:500px; /*set image height here for slider*/
+}
+
+
+/*Start bottom navigation sitemap div*/
+
+#custBotmDiv
+{
+position:relative;
+top:600px;
+background-color: gray;
+text-align: center;
+min-height:100px;
+color:black;
+font-size:20px;
+width:100%;
+}
+
+#custBotDivHomePage
+{
+position:relative;
+top:100px;
+background-color: gray;
+text-align: center;
+min-height:100px;
+color:black;
+font-size:20px;
+width:100%;
+}
+
+.navBottom, .navSiteMapList
+{
+list-style-type: none;
+text-align: center;
+
+}
+
+a.styleMySiteMapLinks:link
+{
+color:black;
+text-decoration:none;
+font-family: Impact;
+font-size:20px;
+}
+
+a.styleMySiteMapLinks:visited
+{
+color:black;
+} 
+
+a.styleMySiteMapLinks:hover
+{
+color:white;
+}
+
+/*Style for images in site Map*/
+
+img.styleMySiteMapIcons:hover
+{
+outline:3px solid green;
+
+}
+
+#footer
+{
+font-size:12px;
+}
+
+
+#content
+{
+width:100%;
+ min-height:100px;
+}
+/*Interact.html page*/
+
+#interact
+{
+position:relative;
+top:100px;
+border:1px solid black;
+text-align: center;
+min-height:200px;
+color:black;
+font-size:20px;
+max-width:1199px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+
+#interactTwoTableContent
+{
+position:relative;
+top:125px;
+border:1px solid black;
+text-align: center;
+min-height:auto; 
+color:black;
+font-size:20px;
+max-width:1199px;
+min-width:1199px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+list-style-type: none;
+
+
+}
+
+#interactUserContentList
+{
+position:relative;
+top:125px;
+border:1px solid black;
+text-align: center;
+min-height:200px;
+color:black;
+font-size:20px;
+max-width:1199px;
+min-width:1199px;
+margin-left: auto;
+margin-right: auto;
+list-style-type: none;
+margin-bottom: 5px;
+
+}
+
+#tryVCRtableOut
+{
+border: 1px solid none;
+min-width:1199px;
+}
+
+#centerMyInteractTable
+{
+margin: 0 auto;
+}
+
+#centerMyInteractTableHeader
+{
+text-align:center;
+}
+
+/*interacMakeNew*/
+.lineMyFormDataUp
+{
+text-align: left;
+}
+
+.listStyleBulletGoAway
+{
+list-style-type: none;
+}
+
+.listStyleBulletGoAwayLeft
+{
+list-style-type: none;
+text-align: left;
+}
+
+/*admin styles*/
+.admin
+{
+color:red;
+}
+
+.adminLineUpList
+{
+text-align: left;
+color:red;
+list-style-type: none;
+}
+
+
+/*AdditionalInfoPage*/
+#centerMyAdditionalInfoTable
+{
+text-align:center;
+margin: 0 auto;
+
+}
+
+/*UserProfileInformation*/
+.editMyProfileData
+{
+font-size:12px;
+}
+
+/*contactRequester*/
+
+#contactRequesterTextArea
+{
+width:95%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+min-height:200px;
+}
+
+/*questionBot*/
+.questionBotAlignment
+{
+}
+
+img.questionBotAlignment:hover
+{
+outline:3px solid green;
+}
+
+/*databaseVisualEventGuidance*/
+
+.databaseVisualEventGuidance
+{
+
+}
+
+td.databaseVisualEventGuidance
+{
+padding:10px;
+}
+
+th.databaseVisualEventGuidance
+{
+padding:10px;
+}
+
+.centerMyCellStuff
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+min-width:50px;
+}
+
+/*readARegionalBankExample*/
+
+.makeMyListGoLeft
+{
+text-align: left;
+}
+
+
+}
+
+
+
+
+

@@ -1,0 +1,2 @@
+class SptcvwtController < ApplicationController
+end

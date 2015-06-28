@@ -1,0 +1,50 @@
+<div class="container" id="adjustMyCarousel">
+  <h1></h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox"  id="colorImageSliderBackground">
+      <div class="item active" >
+        <%= image_tag "welcomePlaceHolder.png", :class => "makeImgMinHeight", :alt =>"Advertise", :width => "360", :height => "345"  %>
+		<!-- Try adding button experimentation within carosolue here-->
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+      </div>
+
+      <div class="item">
+        <%= image_tag "advertisePlaceHolder.png", :class => "makeImgMinHeight", :alt =>"Advertise", :width => "360", :height => "345"  %>  
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+      </div>
+    
+      <div class="item">
+        <%= image_tag "toolsPlaceHolder.png", :class => "makeImgMinHeight", :alt =>"Advertise", :width => "360", :height => "345"  %>
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+      </div>
+
+      <div class="item">
+        <%= image_tag "limitedTimeOffer.png", :class => "makeImgMinHeight", :alt =>"Advertise", :width => "360", :height => "345"  %>
+		<button class="moveMyScrollingImageButton">I'm a button</button>
+		<button  align="right" >I'm a button</button>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="colorMyLeftChevron"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" id="colorMyRightChevron"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>

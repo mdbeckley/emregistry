@@ -1,0 +1,2 @@
+class GsptcvwtController < ApplicationController
+end

@@ -1,0 +1,2 @@
+module CtspimageHelper
+end

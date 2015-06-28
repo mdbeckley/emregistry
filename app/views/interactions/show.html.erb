@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @interaction.user %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @interaction.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @interaction.category %>
+</p>
+
+<p>
+  <strong>Pcs:</strong>
+  <%= @interaction.pcs %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @interaction.text %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @interaction.timestamp %>
+</p>
+
+<%= link_to 'Edit', edit_interaction_path(@interaction) %> |
+<%= link_to 'Back', interactions_path %>

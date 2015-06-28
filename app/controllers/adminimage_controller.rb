@@ -1,0 +1,2 @@
+class AdminimageController < ApplicationController
+end

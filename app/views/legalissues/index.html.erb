@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<%= render :partial => 'shared/head' %>
+<body>
+<%= render :partial => 'shared/topNavBar' %>
+<div id="interactTwoTableContent">
+<p id="notice"><%= notice %></p>
+<h1>Listing Legal Issues</h1>
+<table class="databaseVisualEventGuidance">
+  <thead class="databaseVisualEventGuidance">
+    <tr>
+      <th class="databaseVisualEventGuidance">Name</th>
+      <th class="databaseVisualEventGuidance">Issue</th>
+      <th class="databaseVisualEventGuidance">Comment</th>
+      <th class="databaseVisualEventGuidance">Done</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody class="databaseVisualEventGuidance">
+    <% @legalissues.each do |legalissue| %>
+      <tr>
+        <td class="databaseVisualEventGuidance"><%= legalissue.name %></td>
+        <td class="databaseVisualEventGuidance"><%= legalissue.issue %></td>
+        <td class="databaseVisualEventGuidance"><%= legalissue.comment %></td>
+        <td class="databaseVisualEventGuidance"><%= legalissue.done %></td>
+        <td class="databaseVisualEventGuidance"><%= link_to 'Show', legalissue %></td>
+        <td class="databaseVisualEventGuidance"><%= link_to 'Edit', edit_legalissue_path(legalissue) %></td>
+        <td class="databaseVisualEventGuidance"><%= link_to 'Destroy', legalissue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Legal Issue', new_legalissue_path %>
+</div>
+<%= render :partial => 'shared/btmCustNavContainer' %>
+
+</body>
+</html>

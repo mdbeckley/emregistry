@@ -1,0 +1,2 @@
+module GsptcgimageHelper
+end

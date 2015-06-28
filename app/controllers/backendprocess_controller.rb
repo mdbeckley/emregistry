@@ -1,0 +1,2 @@
+class BackendprocessController < ApplicationController
+end

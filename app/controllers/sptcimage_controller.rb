@@ -1,0 +1,2 @@
+class SptcimageController < ApplicationController
+end

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @legalissue.name %>
+</p>
+
+<p>
+  <strong>Issue:</strong>
+  <%= @legalissue.issue %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @legalissue.comment %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @legalissue.done %>
+</p>
+
+<%= link_to 'Edit', edit_legalissue_path(@legalissue) %> |
+<%= link_to 'Back', legalissues_path %>

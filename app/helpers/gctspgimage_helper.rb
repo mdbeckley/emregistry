@@ -1,0 +1,2 @@
+module GctspgimageHelper
+end

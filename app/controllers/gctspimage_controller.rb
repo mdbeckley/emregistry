@@ -1,0 +1,2 @@
+class GctspimageController < ApplicationController
+end

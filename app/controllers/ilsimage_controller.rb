@@ -1,0 +1,2 @@
+class IlsimageController < ApplicationController
+end

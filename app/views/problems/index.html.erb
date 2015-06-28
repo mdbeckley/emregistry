@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<%= render :partial => 'shared/head' %>
+<body>
+<%= render :partial => 'shared/topNavBar' %>
+<div id="interactTwoTableContent">
+<p id="notice"><%= notice %></p>
+<h1>Listing Problems</h1>
+
+<table class="databaseVisualEventGuidance">
+  <thead class="databaseVisualEventGuidance">
+    <tr>
+      <th class="databaseVisualEventGuidance">Name</th>
+      <th class="databaseVisualEventGuidance">Issue</th>
+      <th class="databaseVisualEventGuidance">Comment</th>
+      <th class="databaseVisualEventGuidance">Fixed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody class="databaseVisualEventGuidance">
+    <% @problems.each do |problem| %>
+      <tr>
+        <td class="databaseVisualEventGuidance"><%= problem.name %></td>
+        <td class="databaseVisualEventGuidance"><%= problem.issue %></td>
+        <td class="databaseVisualEventGuidance"><%= problem.comment %></td>
+        <td class="databaseVisualEventGuidance"><%= problem.fixed %></td>
+        <td class="databaseVisualEventGuidance"><%= link_to 'Show', problem %></td>
+        <td class="databaseVisualEventGuidance"><%= link_to 'Edit', edit_problem_path(problem) %></td>
+        <td class="databaseVisualEventGuidance"><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'New Problem', new_problem_path %>
+</div>
+<%= render :partial => 'shared/btmCustNavContainer' %>
+</body>
+</html>

@@ -1,0 +1,2 @@
+class AdminvwtController < ApplicationController
+end

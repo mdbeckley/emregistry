@@ -1,0 +1,2 @@
+class SptgcimageController < ApplicationController
+end

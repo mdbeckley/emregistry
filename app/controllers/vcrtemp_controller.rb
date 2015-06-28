@@ -1,0 +1,2 @@
+class VcrtempController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class CtgspimageController < ApplicationController
+end

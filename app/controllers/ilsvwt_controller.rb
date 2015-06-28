@@ -1,0 +1,2 @@
+class IlsvwtController < ApplicationController
+end

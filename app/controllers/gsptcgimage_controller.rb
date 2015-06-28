@@ -1,0 +1,2 @@
+class GsptcgimageController < ApplicationController
+end

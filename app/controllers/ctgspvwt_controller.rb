@@ -1,0 +1,2 @@
+class CtgspvwtController < ApplicationController
+end

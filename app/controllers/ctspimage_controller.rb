@@ -1,0 +1,2 @@
+class CtspimageController < ApplicationController
+end

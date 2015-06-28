@@ -1,0 +1,2 @@
+class BusinessplanController < ApplicationController
+end
